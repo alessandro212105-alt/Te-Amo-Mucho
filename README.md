@@ -1,6 +1,4 @@
-# TeAmoMucho
 Desde el fondo de mi corazón
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
