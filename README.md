@@ -280,10 +280,11 @@ Desde el fondo de mi corazón
         }
         
         .letter-content.open {
-            max-height: 1000px;
+            max-height: 2000px;  /* CAMBIADO: de 1000px a 2000px */
             opacity: 1;
             padding: 30px 20px;
             margin-top: 20px;
+            overflow-y: auto;    /* AGREGADO: scroll si es necesario */
         }
         
         .letter-text {
