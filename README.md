@@ -235,6 +235,70 @@ Desde el fondo de mi corazón
         .secret-box.active {
             background: linear-gradient(135deg, #B3E5FC, #81D4FA);
         }
+
+        /* NUEVO: CARTA DE AMOR */
+        .letter-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .letter-envelope {
+            background: linear-gradient(135deg, #E3F2FD, #B3E5FC);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #4FC3F7;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .letter-envelope:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(79, 195, 247, 0.4);
+        }
+        
+        .letter-envelope h3 {
+            margin: 0;
+            color: #1565C0;
+            font-size: 1.5em;
+        }
+        
+        .letter-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.8s ease;
+            text-align: left;
+            line-height: 1.8;
+            padding: 0 20px;
+            background: #fafafa;
+            border-radius: 10px;
+            margin-top: 0;
+        }
+        
+        .letter-content.open {
+            max-height: 1000px;
+            opacity: 1;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+        
+        .letter-text {
+            font-size: 1.1em;
+            color: #333;
+            white-space: pre-line;
+        }
+        
+        .letter-signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
+            color: #4FC3F7;
+            font-weight: bold;
+        }
         
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -399,6 +463,36 @@ Desde el fondo de mi corazón
                 </div>
             </div>
         </div>
+
+        <!-- 5. CARTA DE AMOR (NUEVA - AL FINAL) -->
+        <div class="letter-section">
+            <h2 class="section-title">Mi Carta para Ti 🩵</h2>
+            <div class="letter-envelope" onclick="toggleLetter()">
+                <h3>💌 Toca aquí para abrir mi carta</h3>
+                <p>Desde el fondo de mi corazón...</p>
+            </div>
+            <div class="letter-content" id="letterContent">
+                <div class="letter-text">
+Querida África,
+
+Desde el fondo de mi corazón, quiero que sepas lo mucho que significas para mí. Cada día a tu lado es un regalo que atesoro profundamente.
+
+Eres la luz que ilumina mis días más oscuros, la calma en mis tormentas y la razón por la que mi corazón late con tanta fuerza. Tu sonrisa es el primer pensamiento que tengo al despertar y el último antes de dormir.
+
+Me encanta cómo eres, cada parte de ti: tu forma de reír, tu manera de mirarme, tu forma de entender sin necesidad de palabras. Eres la persona más auténtica y especial que he conocido.
+
+Prometo amarte cada día con la misma intensidad, apoyarte en todos tus sueños y ser tu refugio cuando lo necesites. Quiero construir una vida llena de momentos bonitos contigo, llena de risas, aventuras y complicidad.
+
+Eres mi mejor amiga, mi confidente y el amor de mi vida. No puedo imaginar un futuro sin ti.
+
+Con todo mi amor,
+Para siempre...
+                </div>
+                <div class="letter-signature">
+                    Con todo mi corazón 🩵
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -425,6 +519,12 @@ Desde el fondo de mi corazón
         // FUNCIÓN: Mensajes secretos
         function toggleSecret(element) {
             element.classList.toggle('active');
+        }
+
+        // NUEVA FUNCIÓN: Carta de amor
+        function toggleLetter() {
+            const letterContent = document.getElementById('letterContent');
+            letterContent.classList.toggle('open');
         }
         
         // FUNCIÓN: Nube de palabras CON TUS PALABRAS
@@ -497,7 +597,7 @@ Desde el fondo de mi corazón
             createWordCloud();
             
             // Efecto de aparición suave
-            const elements = document.querySelectorAll('.header, .messages-section, .reasons-section, .wordcloud-section, .secret-section');
+            const elements = document.querySelectorAll('.header, .messages-section, .reasons-section, .wordcloud-section, .secret-section, .letter-section');
             elements.forEach((element, index) => {
                 element.style.opacity = '0';
                 element.style.transform = 'translateY(20px)';
