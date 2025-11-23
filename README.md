@@ -473,23 +473,24 @@ Desde el fondo de mi corazón
             </div>
             <div class="letter-content" id="letterContent">
                 <div class="letter-text">
-Querida África,
+África,
 
-Desde el fondo de mi corazón, quiero que sepas lo mucho que significas para mí. Cada día a tu lado es un regalo que atesoro profundamente.
+No sabría como empezar esta carta, creo que todo lo que te pueda decir siempre va a demostrar todo el amor que te tengo, pero dicen que las palabras llegan al corazón, por eso quiero dedicarte algunas, que espero te gusten.
 
-Eres la luz que ilumina mis días más oscuros, la calma en mis tormentas y la razón por la que mi corazón late con tanta fuerza. Tu sonrisa es el primer pensamiento que tengo al despertar y el último antes de dormir.
+No puedes llegar a imaginarte lo que significas para mí, veía imposible poder estar contigo, poder conocerte más, por eso ahora quiero cuidarte y darte mucho amor para que nunca te vayas de mi lado. Es que lo veía como un sueño el día que me dijiste que si, no me lo creía, pero mira ahora, sigue siendo un sueño y espero no despertar nunca para seguir contigo.
 
-Me encanta cómo eres, cada parte de ti: tu forma de reír, tu manera de mirarme, tu forma de entender sin necesidad de palabras. Eres la persona más auténtica y especial que he conocido.
+Cada día pienso y me pregunto, ¿realmente merezco estar con ella?, porque eres una gran mujer y persona, hermosa por fuera y dentro, y yo siento que te merecerías mucho más, porque si yo sé que no soy el mejor, tampoco el más guapo ni nada de eso, muchas veces te hago enfadar y más cosas, en cambio tú, no tienes nada malo, eres una obra de arte, muy bella, tienes una carita perfecta y sobretodo unos ojos muy muy muy lindos y que decir de tu personalidad, única e inigualable, por eso me empezaste a gustar, me llamaba la atención tu forma de ser, resaltabas ante lás demás y lo sigues haciendo. Y ves, tu eres perfecta para mí, en cambio yo no, pero bueno yo solo quiero que tu seas feliz siempre e intentaré que sea así. No quiero que te canses de mí nunca, sería muy feito eso, y aunque no lo demuestre, me pongo muy mal siempre que nos enfadamos, no me gusta demostrarlo, pero es así, pero sabes que, eso se me pasa con solo ver un te amo tuyo, es como que me da vida, me da ánimos. Tengo miedo de perderte, espero nunca pase eso, quiero que nunca pase. porque enserio, no veo mís dias sin hablarte, sin decirte tonterías, sin picarte, sin decirte te amo, sin decirte porque cuando te pregunto si me amas, ves eres todo de mí, eres la pieza que encaja perfecta conmigo, eres mi persona ideal, mi persona favorita y el amor de mi vida. Eres la reina de mi corazón, por ti está feliz siempre, así que sigue haciendome feliz vale?, por mucho tiempo.
 
-Prometo amarte cada día con la misma intensidad, apoyarte en todos tus sueños y ser tu refugio cuando lo necesites. Quiero construir una vida llena de momentos bonitos contigo, llena de risas, aventuras y complicidad.
+En mis días, estás presente siempre, me despierto y pienso en ti, estoy en el autobús yendo al instituto y pienso en ti, estoy en clases y pienso en ti, África pienso en ti cada segundo de mi vida, no se que me has hecho, nunca había estado así, tan enamorado, pero me encanta porque eres tú. Eres la primera persona de la cual me enamoro realmente, así que se podría decir que eres mi primer amor y si lo eres, yo digo que lo eres, y serás el primero y único gran amor de toda mi vida, porque quiero contigo una vida, y me la pela que tengamos poco tiempo de estar juntos, yo quiero que me acompañes toda mi vida.
 
-Eres mi mejor amiga, mi confidente y el amor de mi vida. No puedo imaginar un futuro sin ti.
+Y te lo repito , me encanta como eres, cada parte de ti, tu forma de reír, tu manera de mirarme, tu forma de entenderme, todo toditito de ti, por eso prometo amarte cada día mucho más, apoyarte en todo y ser tu refugio cuando lo necesites, quiero tener una vida llena de momentos bonitos contigo, llena de risas, experiencias y amor.
+
+Siempre serás mi mejor amiga, mi confidente y el amor de mi vida. No puedo imaginar un futuro sin ti.
 
 Con todo mi amor,
-Para siempre...
                 </div>
                 <div class="letter-signature">
-                    Con todo mi corazón 🩵
+                    Te amo infinitamente más que infinitamente infinito🩵
                 </div>
             </div>
         </div>
