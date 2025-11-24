@@ -697,7 +697,7 @@ Con todo mi amor,
                 type: "dedication",
                 content: `
                     <div class="dedication">
-                        <p>Nunca se sabe cuando puedes amar tanto a alguien, en mi caso, no pensaba que llegaría a amarte.</p>
+                        <p>Nunca se sabe cuando puedes amar tanto a alguien, en mi caso, no pensaba que llegaría a amarte de esta manera.</p>
                         <br>
                         <p>Nunca se sabe cuánto es lo que puedes llegar a amar a alguien, en mi caso, tampoco quisiera saberlo, porque así mi amor por ti no tendría un límite</p>
                         <br>
