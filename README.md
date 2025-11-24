@@ -236,7 +236,7 @@ Desde el fondo de mi corazón
             background: linear-gradient(135deg, #B3E5FC, #81D4FA);
         }
 
-        /* NUEVO: CARTA DE AMOR */
+        /* CARTA DE AMOR */
         .letter-section {
             background: white;
             padding: 30px;
@@ -280,11 +280,11 @@ Desde el fondo de mi corazón
         }
         
         .letter-content.open {
-            max-height: 2000px;  /* CAMBIADO: de 1000px a 2000px */
+            max-height: 2000px;
             opacity: 1;
             padding: 30px 20px;
             margin-top: 20px;
-            overflow-y: auto;    /* AGREGADO: scroll si es necesario */
+            overflow-y: auto;
         }
         
         .letter-text {
@@ -300,7 +300,101 @@ Desde el fondo de mi corazón
             color: #4FC3F7;
             font-weight: bold;
         }
+
+        /* NUEVO: LIBRO INTERACTIVO */
+        .book-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
         
+        .book-container {
+            background: #f5f5f5;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #4FC3F7;
+            margin: 20px 0;
+            min-height: 400px;
+            position: relative;
+        }
+        
+        .book-page {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-height: 350px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .book-cover {
+            background: linear-gradient(135deg, #4FC3F7, #81D4FA);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .book-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .book-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .dedication {
+            text-align: center;
+            font-style: italic;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .book-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .book-btn {
+            background: linear-gradient(135deg, #4FC3F7, #81D4FA);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .book-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(79, 195, 247, 0.3);
+        }
+        
+        .book-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .page-number {
+            font-weight: bold;
+            color: #4FC3F7;
+            margin: 0 15px;
+        }
+
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
@@ -465,7 +559,7 @@ Desde el fondo de mi corazón
             </div>
         </div>
 
-        <!-- 5. CARTA DE AMOR (NUEVA - AL FINAL) -->
+        <!-- 5. CARTA DE AMOR -->
         <div class="letter-section">
             <h2 class="section-title">Mi Carta para Ti 🩵</h2>
             <div class="letter-envelope" onclick="toggleLetter()">
@@ -492,6 +586,24 @@ Con todo mi amor,
                 </div>
                 <div class="letter-signature">
                     Te amo infinitamente más que infinitamente infinito🩵
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. NUEVO: LIBRO INTERACTIVO -->
+        <div class="book-section">
+            <h2 class="section-title">Nuestro Libro del Amor 📖</h2>
+            <p>La historia de nuestro amor página a página</p>
+            
+            <div class="book-container">
+                <div class="book-page" id="bookPage">
+                    <!-- El contenido del libro se actualiza aquí -->
+                </div>
+                
+                <div class="book-controls">
+                    <button class="book-btn" onclick="previousPage()" id="prevBtn">← Página Anterior</button>
+                    <span class="page-number">Página <span id="currentPage">1</span> de <span id="totalPages">2</span></span>
+                    <button class="book-btn" onclick="nextPage()" id="nextBtn">Página Siguiente →</button>
                 </div>
             </div>
         </div>
@@ -523,7 +635,7 @@ Con todo mi amor,
             element.classList.toggle('active');
         }
 
-        // NUEVA FUNCIÓN: Carta de amor
+        // FUNCIÓN: Carta de amor
         function toggleLetter() {
             const letterContent = document.getElementById('letterContent');
             letterContent.classList.toggle('open');
@@ -570,6 +682,62 @@ Con todo mi amor,
             });
         }
         
+        // NUEVO: LIBRO INTERACTIVO (SOLO PORTADA Y PRIMERA PÁGINA)
+        const bookPages = [
+            {
+                type: "cover",
+                content: `
+                    <div class="book-cover">
+                        <div class="book-title">Un amor infinito</div>
+                        <div class="book-subtitle">Para África</div>
+                    </div>
+                `
+            },
+            {
+                type: "dedication",
+                content: `
+                    <div class="dedication">
+                        <p>Nunca se sabe cuando puedes amar tanto a alguien, en mi caso, no pensaba que llegaría a amarte.</p>
+                        <br>
+                        <p>Nunca se sabe cuánto es lo que puedes llegar a amar a alguien, en mi caso, tampoco quisiera saberlo, porque así mi amor por ti no tendría un límite</p>
+                        <br>
+                        <p>Muchas veces cuesta expresar los sentimientos, en mi caso, tengo un sentimiento tan profundo y especial, que hasta me faltarían palabras para describirlo.</p>
+                        <br>
+                        <p>En un libro puedo expresar e ir, con el tiempo, contando nuestra historia, que espero nunca tenga un final. A lo mejor pensarás que no es un gran detalle o que es muy repentino o anticipado, pero solamente quiero expresar mis sentimientos y que puedas tener un espacio bonito para ti.</p>
+                        <br>
+                        <p>Espero te guste, mi amor.</p>
+                    </div>
+                `
+            }
+        ];
+
+        let currentPage = 0;
+
+        function updateBook() {
+            const page = bookPages[currentPage];
+            document.getElementById('bookPage').innerHTML = page.content;
+            
+            document.getElementById('currentPage').textContent = currentPage + 1;
+            document.getElementById('totalPages').textContent = bookPages.length;
+            
+            document.getElementById('prevBtn').disabled = currentPage === 0;
+            document.getElementById('nextBtn').disabled = currentPage === bookPages.length - 1;
+        }
+
+        function nextPage() {
+            if (currentPage < bookPages.length - 1) {
+                currentPage++;
+                updateBook();
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                updateBook();
+            }
+        }
+        
         // Crear corazones flotantes
         function createHearts() {
             const heartsContainer = document.getElementById('heartsContainer');
@@ -598,8 +766,11 @@ Con todo mi amor,
             // Crear nube de palabras
             createWordCloud();
             
+            // Inicializar libro
+            updateBook();
+            
             // Efecto de aparición suave
-            const elements = document.querySelectorAll('.header, .messages-section, .reasons-section, .wordcloud-section, .secret-section, .letter-section');
+            const elements = document.querySelectorAll('.header, .messages-section, .reasons-section, .wordcloud-section, .secret-section, .letter-section, .book-section');
             elements.forEach((element, index) => {
                 element.style.opacity = '0';
                 element.style.transform = 'translateY(20px)';
